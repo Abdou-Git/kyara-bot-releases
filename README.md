@@ -2,15 +2,15 @@
 
 Kyara Bot ouvre les packs gratuits disponibles et joue aux jeux solo de Kyara selon les réglages de chaque compte.
 
-**Version actuelle : 1.6.6**
+**Version actuelle : 1.6.7**
 
-[Télécharger Kyara Bot 1.6.6 pour Windows](https://github.com/Abdou-Git/kyara-bot-releases/releases/download/v1.6.6/KyaraBotSetup-1.6.6.exe) · [Voir les nouveautés](https://github.com/Abdou-Git/kyara-bot-releases/releases/tag/v1.6.6)
+[Télécharger Kyara Bot 1.6.7 pour Windows](https://github.com/Abdou-Git/kyara-bot-releases/releases/download/v1.6.7/KyaraBotSetup-1.6.7.exe) · [Voir les nouveautés](https://github.com/Abdou-Git/kyara-bot-releases/releases/tag/v1.6.7)
 
-Windows 10 ou 11 en 64 bits est nécessaire. L’installateur contient le navigateur, Node.js et Kyara Companion **1.4.4**. Il n’y a pas de commande à lancer, d’outil de développement à installer ou d’extension à charger manuellement pour un nouveau compte géré.
+Windows 10 ou 11 en 64 bits est nécessaire. L’installateur contient le navigateur, Node.js et Kyara Companion **1.4.5**. Il n’y a pas de commande à lancer, d’outil de développement à installer ou d’extension à charger manuellement pour un nouveau compte géré.
 
 ## Commencer
 
-1. Télécharge puis installe `KyaraBotSetup-1.6.6.exe`
+1. Télécharge puis installe `KyaraBotSetup-1.6.7.exe`
 2. Lance Kyara Bot et clique sur **Ajouter un compte**
 3. Connecte-toi normalement à Kyara dans la fenêtre qui s’ouvre, puis vérifie le compte dans le bot
 4. Active les **Packs automatiques** si tu veux ouvrir les packs gratuits disponibles
@@ -27,6 +27,8 @@ Le bouton **Ouvrir l’onglet du jeu** apparaît sur la carte du compte lorsqu�
 Si la partie reste au statut **Résultat à vérifier**, clique sur **Relancer les jeux**, juste à côté. Le bot ferme l’ancienne partie, attend la confirmation, puis réactive les jeux sélectionnés. L’historique, les choix de jeux, l’option de quota et les délais sont conservés. Le dernier coup incertain n’est pas rejoué et l’ancien résultat n’est pas confirmé. Si la fermeture échoue, les jeux restent en attente.
 
 Par défaut, le bot termine la partie en cours puis attend lorsque le plafond de tickets du jour ou de la semaine est atteint. Il vérifie le quota toutes les cinq minutes et reprend quand les récompenses sont de nouveau disponibles.
+
+Active **Couper le son des jeux** pour rendre silencieux les onglets de jeu du bot, y compris une partie déjà ouverte et les suivantes. Le réglage est enregistré par compte et reste disponible en pause. Tes autres onglets gardent leur son. Désactive-le pour rétablir le son du jeu. Si tu navigues vers une autre page dans cet onglet, Companion retire le silence qu’il avait appliqué.
 
 Pour continuer à jouer au plafond, active **Jouer même au quota maximum**. Ce réglage est désactivé par défaut et ne donne pas de tickets supplémentaires. Si tu le désactives pendant une partie, le bot la termine avant de remettre les nouvelles parties en attente.
 
