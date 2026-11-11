@@ -2,15 +2,15 @@
 
 Kyara Bot ouvre les packs gratuits disponibles et joue aux jeux solo de Kyara selon les réglages de chaque compte.
 
-**Version actuelle : 1.6.4**
+**Version actuelle : 1.6.5**
 
-[Télécharger Kyara Bot 1.6.4 pour Windows](https://github.com/Abdou-Git/kyara-bot-releases/releases/download/v1.6.4/KyaraBotSetup-1.6.4.exe) · [Voir les nouveautés](https://github.com/Abdou-Git/kyara-bot-releases/releases/tag/v1.6.4)
+[Télécharger Kyara Bot 1.6.5 pour Windows](https://github.com/Abdou-Git/kyara-bot-releases/releases/download/v1.6.5/KyaraBotSetup-1.6.5.exe) · [Voir les nouveautés](https://github.com/Abdou-Git/kyara-bot-releases/releases/tag/v1.6.5)
 
-Windows 10 ou 11 en 64 bits est nécessaire. L’installateur contient le navigateur, Node.js et Kyara Companion **1.4.3**. Il n’y a pas de commande à lancer, d’outil de développement à installer ou d’extension à charger manuellement pour un nouveau compte géré.
+Windows 10 ou 11 en 64 bits est nécessaire. L’installateur contient le navigateur, Node.js et Kyara Companion **1.4.4**. Il n’y a pas de commande à lancer, d’outil de développement à installer ou d’extension à charger manuellement pour un nouveau compte géré.
 
 ## Commencer
 
-1. Télécharge puis installe `KyaraBotSetup-1.6.4.exe`
+1. Télécharge puis installe `KyaraBotSetup-1.6.5.exe`
 2. Lance Kyara Bot et clique sur **Ajouter un compte**
 3. Connecte-toi normalement à Kyara dans la fenêtre qui s’ouvre, puis vérifie le compte dans le bot
 4. Active les **Packs automatiques** si tu veux ouvrir les packs gratuits disponibles
@@ -21,6 +21,8 @@ Les packs et les jeux s’activent séparément pour chaque compte. Chaque compt
 ## Jeux solo et tickets
 
 Le bot propose douze jeux : Main du jour, Expédition, Les Trois Arcs, Main Kyara, Raid du jour, Raid Kyara, Kyara 21, Qui est-ce ?, Série express, Blind test, Mémoire et Le plus aimé. Tu peux modifier la sélection et mettre les jeux en pause pour chaque compte.
+
+Le bouton **Ouvrir l’onglet du jeu** apparaît sur la carte du compte lorsqu’une partie est en cours, en pause ou à vérifier. Il affiche son onglet dans le bon profil ou le rouvre s’il a été fermé. Il ne lance pas de nouvelle partie et ne rejoue aucun coup. Rouvrir l’onglet ne garantit pas de récupérer la partie ; un résultat incertain reste à résoudre manuellement avant de relancer les jeux.
 
 Par défaut, le bot termine la partie en cours puis attend lorsque le plafond de tickets du jour ou de la semaine est atteint. Il vérifie le quota toutes les cinq minutes et reprend quand les récompenses sont de nouveau disponibles.
 
