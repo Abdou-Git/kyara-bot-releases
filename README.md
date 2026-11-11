@@ -1,13 +1,39 @@
-# Kyara Bot for Windows
+# Kyara Bot pour Windows
 
-Download the [latest Windows installer](https://github.com/Abdou-Git/kyara-bot-releases/releases/latest).
+Kyara Bot ouvre les packs gratuits disponibles et joue aux jeux solo de Kyara selon les réglages de chaque compte.
 
-The installer includes Node.js, Chromium and Kyara Companion. Windows 10/11 x64 is required. No manual Node.js, npm, Git, Python or browser installation is required. Install for your Windows user, launch Kyara Bot, add an account and sign in normally.
+**Version actuelle : 1.6.4**
 
-Each managed account has an independent browser profile. Initial authentication and mandatory interactive verifications remain manual. Existing account settings, histories and profiles are kept outside application files in `%LOCALAPPDATA%\KyaraBot`.
+[Télécharger Kyara Bot 1.6.4 pour Windows](https://github.com/Abdou-Git/kyara-bot-releases/releases/download/v1.6.4/KyaraBotSetup-1.6.4.exe) · [Voir les nouveautés](https://github.com/Abdou-Git/kyara-bot-releases/releases/tag/v1.6.4)
 
-This repository contains distribution information and release artifacts. The development repository remains private. Application JavaScript included in the installer is compiled and minified; distribution is not a claim of source confidentiality or obfuscation security.
+Windows 10 ou 11 en 64 bits est nécessaire. L’installateur contient le navigateur, Node.js et Kyara Companion **1.4.3**. Il n’y a pas de commande à lancer, d’outil de développement à installer ou d’extension à charger manuellement pour un nouveau compte géré.
 
-Updates authenticate an Ed25519-signed `latest.json` manifest and verify the installer's SHA-256 before execution. The public verification key is included here. The executables do not currently have an Authenticode signing certificate; Windows SmartScreen may show a warning. They are not guaranteed to install without warnings.
+## Commencer
 
-The release notes distinguish verified installation tests from remaining clean-Windows validation. Browser profiles and user data are retained by uninstalling; account automation is stopped through the application's normal shutdown.
+1. Télécharge puis installe `KyaraBotSetup-1.6.4.exe`
+2. Lance Kyara Bot et clique sur **Ajouter un compte**
+3. Connecte-toi normalement à Kyara dans la fenêtre qui s’ouvre, puis vérifie le compte dans le bot
+4. Active les **Packs automatiques** si tu veux ouvrir les packs gratuits disponibles
+5. Dans **Jeux solo**, sélectionne les jeux souhaités et active leur interrupteur
+
+Les packs et les jeux s’activent séparément pour chaque compte. Chaque compte géré possède sa propre fenêtre et son propre profil. Garde le bot et les fenêtres Kyara ouverts pendant l’utilisation. La connexion initiale et les vérifications demandées par Kyara restent à faire manuellement.
+
+## Jeux solo et tickets
+
+Le bot propose douze jeux : Main du jour, Expédition, Les Trois Arcs, Main Kyara, Raid du jour, Raid Kyara, Kyara 21, Qui est-ce ?, Série express, Blind test, Mémoire et Le plus aimé. Tu peux modifier la sélection et mettre les jeux en pause pour chaque compte.
+
+Par défaut, le bot termine la partie en cours puis attend lorsque le plafond de tickets du jour ou de la semaine est atteint. Il vérifie le quota toutes les cinq minutes et reprend quand les récompenses sont de nouveau disponibles.
+
+Pour continuer à jouer au plafond, active **Jouer même au quota maximum**. Ce réglage est désactivé par défaut et ne donne pas de tickets supplémentaires. Si tu le désactives pendant une partie, le bot la termine avant de remettre les nouvelles parties en attente.
+
+Les quiz reposent sur des heuristiques : les scores et les victoires ne sont pas garantis. Le blind test ne reconnaît pas l’audio. Les résultats affichés viennent de Kyara ; les délais et restrictions du site restent respectés.
+
+## Mettre à jour
+
+Dans le bot, ouvre **Réglages**, recherche une mise à jour, puis télécharge-la et installe-la. Tu peux aussi utiliser l’installateur ci-dessus. Les comptes, réglages, historiques et profils sont conservés dans `%LOCALAPPDATA%\KyaraBot`, séparément des fichiers de l’application.
+
+L’application recherche aussi les nouvelles versions au lancement puis toutes les six heures. Le téléchargement et l’installation restent des actions explicites. Les mises à jour intégrées vérifient le manifeste signé et l’empreinte de l’installateur avant de l’exécuter.
+
+## À savoir
+
+L’installateur n’a pas de certificat Authenticode : Windows SmartScreen peut afficher un avertissement. La validation sur un Windows entièrement vierge reste à effectuer. La désinstallation conserve les données personnelles du bot.
